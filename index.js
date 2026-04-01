@@ -36,6 +36,11 @@ app.use(express.json());
 app.get('/student', (req, res) => {
   res.send('Hello, World... this is my first API!');
 });
+
+app.get('/', (req, res) => {
+  res.send('Hello, World... this is defualt routes!');
+});
+
 const port = 3000 || process.env.PORT
 
 app.listen(3000, () => {
